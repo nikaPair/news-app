@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# Приложение для управления новостями
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Простое CRUD-приложение для управления списком новостей, созданное с использованием React и TypeScript.
 
-## Available Scripts
+## Функциональность
 
-In the project directory, you can run:
+-   Просмотр списка новостей
+-   Добавление новой новости
+-   Редактирование существующей новости
+-   Удаление новости
+-   Адаптивный дизайн для мобильных устройств
+-   Хранение данных в localStorage браузера
 
-### `npm start`
+## Технологии
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   React с хуками и контекстом
+-   TypeScript
+-   localStorage API
+-   CSS3 (Grid, Flexbox для адаптивной верстки)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Запуск проекта
 
-### `npm test`
+1. Клонируйте репозиторий
+2. Установите зависимости: `npm install`
+3. Запустите проект: `npm start`
+4. Откройте [http://localhost:3000](http://localhost:3000) в браузере
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Структура проекта
 
-### `npm run build`
+-   `src/components/` - React компоненты приложения
+-   `src/hooks/` - Пользовательские хуки и контекст
+-   `src/types/` - TypeScript типы и интерфейсы
+-   `src/utils/` - Утилиты для работы с localStorage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Архитектура
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Приложение построено на основе следующих принципов:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   React Context API для управления глобальным состоянием
+-   Пользовательские хуки для разделения логики и представления
+-   Типизация с помощью TypeScript
+-   Хранение данных в localStorage
 
-### `npm run eject`
+## Как использовать
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. На главной странице отображается список всех новостей
+2. Нажмите кнопку "Добавить новость" для создания новой записи
+3. Заполните форму и нажмите "Добавить"
+4. Для редактирования или удаления используйте соответствующие кнопки в карточке новости
